@@ -1,0 +1,254 @@
+* {
+    font-family: roboto;
+}
+
+
+body {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+svg {
+    width: 20px;
+    color: white;
+}
+
+input {
+    width: 90%;
+    border-radius: 20px;
+    background-color: snow;
+    border: 0.5 gray solid;
+    height: 30px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #60a5fa;
+    color: white;
+    border: none;
+    border-radius: 30%;
+}
+
+.dashboard {
+    background-color: #60a5fa;
+    grid-column:  1 / 2;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template: 0.5fr 3fr 2fr/ 1fr;
+
+}
+
+.right-header {
+    background-color: #eff6ff;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    box-shadow: 10px 4px black;
+
+}
+
+.rightheader-top {
+    display: grid;
+    padding: 3vh 3vw 3vh 3vw;
+    align-content: start;
+    align-items:center;
+    grid-template-columns: auto 5fr 0.5fr .1fr .3fr .7fr;
+    gap: 20px;
+}
+
+.rightheader-top h1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.rightheader-top svg {
+    align-self: center;
+    justify-self: center;
+}
+
+.rightheader-bottom {
+    display: grid;
+    grid-template-columns: auto 3fr 0.5fr 0.5fr 0.5fr;
+    align-content: start;
+    align-items: center;
+    padding: 0px 3vw;
+    gap: 20px;
+}
+
+.rightheader-bottom img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.mainbar {
+    background-color: #dbeafe;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80%;
+    padding-bottom: 30px;
+
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    gap: 5px;
+    margin-right: min(1vw, 5px);
+}
+
+.logo svg {
+    width: 50px;
+}
+
+.logo h1 {
+    justify-self: start;
+}
+
+div h1 {
+    justify-self: start;
+}
+
+
+.top-sect div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    font-size: .65rem;
+    color: white;
+    height: 40px;
+}
+
+.website-header {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    margin: 20px 80px 0px 80px;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.website-header h1 {
+    font-size: 0.5rem;
+}
+
+.introduction p{
+    margin-bottom: 5px;
+}
+
+.introduction h1{
+    margin-top: 5px;
+}
+
+.main-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    margin: 0px 20px;
+}
+
+.main-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    margin: 0px 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.projects > div {
+    display: grid;
+    border: black 1px solid;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 10%;
+    min-height: 200px;
+
+}
+
+.projects div h1 {
+    font-size: 1rem;
+    text-align: left;
+    width: max(150px, 70%);
+
+}
+
+.projects div p {
+    font-size: 0.5rem;
+    text-align: left;
+    width: max(150px, 70%);
+
+}
+
+.main-right-top > div, .main-right-bottom > div {
+    background-color: white;
+    padding: 20px;
+
+}
+
+
+
+
+.main-right-top div h1, .main-right-bottom div h1 {
+    font-size: 1rem;
+    text-align: left;
+
+}
+
+.main-right-top div p, .main-right-bottom div p {
+    font-size: 0.5rem;
+    text-align: left;
+
+}
+
+.trending {
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+}
+
+.trending > div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trending div h1, .trending div p {
+    font-size: 1rem;
+}
+
+.grid-support {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    gap: 6%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.grid-support svg {
+    align-self: end;
+    justify-self: end;
+}
